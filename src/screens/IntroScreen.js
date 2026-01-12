@@ -1,0 +1,37 @@
+import { Image, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import SvgLogo from '../components/SvgLogo'
+
+const IntroScreen = () => {
+  return (
+    <View style={styles.container}>
+        <SvgLogo/>
+        <Image source={require("../assets/Ellipse 1006 2.png")}
+        style={styles.sumImage}
+      />
+
+      <Text>IntroScreen</Text>
+    </View>
+  )
+}
+
+export default IntroScreen
+
+const styles = StyleSheet.create({
+  container:{
+    backgroundColor: "#fff",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  sumImage: {
+  position: "absolute",
+  bottom: -69,
+  left: 110,
+  width: 150,
+  height: 300,
+  resizeMode: "contain", // Ensures the image maintains its aspect ratio
+
+  
+}
+})
