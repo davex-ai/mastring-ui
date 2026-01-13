@@ -9,8 +9,6 @@ const IntroScreen = () => {
         <Image source={require("../assets/Ellipse 1006 2.png")}
         style={styles.sumImage}
       />
-
-      <Text>IntroScreen</Text>
     </View>
   )
 }
