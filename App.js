@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import IntroScreen from './src/screens/IntroScreen';
 import SvgLogo from './src/components/SvgLogo';
 import PageTwo from './src/screens/PageTwo';
+import PageThree from './src/screens/PageThree';
+import Page from './src/screens/Page';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <PageTwo/>
+      <Page /> 
       <StatusBar style="auto" />
     </View>
   );

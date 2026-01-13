@@ -9,7 +9,6 @@ const PageTwo = () => {
         <View>
             <View style={styles.top_container}>
                 <Arrow />
-                {/* <Image style={styles.arr} source={require("../assets/Back.png")} /> */}
                 <Image style={styles.image} source={require("../assets/Img.png")} />
             </View>
             <Text style={styles.text}> Contact Us</Text>
@@ -39,12 +38,6 @@ const PageTwo = () => {
                     <View style={styles.left}> <View style={styles.social} ><Icon name="icon1"/> </View> <Text style={styles.bodyText}>Tik Tok</Text> </View>
                      <View style={styles.arrowLine}><Icon name="arrowLine"/></View>
                 </View>
-                
-                {/* <Icon name="icon2"/>
-                <Icon name="icon3"/>
-                <Icon name="icon6"/>
-                <Icon name="icon7"/> */}
-                
             </View>
         </View>
     )
@@ -54,8 +47,7 @@ export default PageTwo
 
 const styles = StyleSheet.create({
     top_container: {
-        flexDirection: 'row',
-        // justifyContent: 'space-between',
+        flexDirection: 'row', 
         alignItems: 'center',
         paddingTop: 39,
         gap: 300
