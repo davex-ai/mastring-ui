@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Arrow from '../components/Arrow'
 import Icon from '../components/Icon'
+import Separator from '../components/Seperator'
 
 const PageTwo = () => {
     return (
@@ -15,11 +16,27 @@ const PageTwo = () => {
             <View style={styles.body}>
                 <Text style={styles.bodyTextHead}> Social Media Platforms</Text>
                 <View style={styles.wholeLine}>
-                    <View style={styles.left}> <View style={styles.social} ><Icon name="icon1"/> </View> <Text style={styles.bodyText}>WhatsApp</Text> </View>
+                    <View style={styles.left}> <View style={styles.social} ><Icon name="icon3"/> </View> <Text style={styles.bodyText}>WhatsApp</Text> </View>
                      <View style={styles.arrowLine}><Icon name="arrowLine"/></View>
                 </View>
+                <Separator/>
+                <View style={styles.tiktokWholeLine}>
+                    <View style={styles.left}> <View style={styles.social} ><Icon name="icon6"/> </View> <Text style={styles.bodyText}>Twitter</Text> </View>
+                     <View style={styles.arrowLine}><Icon name="arrowLine"/></View>
+                </View>
+                <Separator/>
                 <View style={styles.wholeLine}>
-                    <View style={styles.left}> <View style={styles.social} ><Icon name="icon2"/> </View> <Text style={styles.bodyText}>WhatsApp</Text> </View>
+                    <View style={styles.left}> <View style={styles.social} ><Icon name="icon2"/> </View> <Text style={styles.bodyText}>Instagram</Text> </View>
+                     <View style={styles.arrowLine}><Icon name="arrowLine"/></View>
+                </View>
+                <Separator/>
+                <View style={styles.wholeLine}>
+                    <View style={styles.left}> <View style={styles.social} ><Icon name="icon7"/> </View> <Text style={styles.bodyText}>Snap Chat</Text> </View>
+                     <View style={styles.arrowLine}><Icon name="arrowLine"/></View>
+                </View>
+                <Separator/>
+                <View style={styles.tiktokWholeLine}>
+                    <View style={styles.left}> <View style={styles.social} ><Icon name="icon1"/> </View> <Text style={styles.bodyText}>Tik Tok</Text> </View>
                      <View style={styles.arrowLine}><Icon name="arrowLine"/></View>
                 </View>
                 
@@ -40,7 +57,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         // justifyContent: 'space-between',
         alignItems: 'center',
-        paddingTop: 9,
+        paddingTop: 39,
         gap: 300
     },
     image: {
@@ -51,8 +68,8 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: 700,
         fontFamily: 'Poppins',
-        marginTop: 50,
-        marginBottom: 30
+        marginTop: 20,
+        marginBottom: 20
     },
     body: {
         backgroundColor: '#F5F5FA',
@@ -79,13 +96,19 @@ const styles = StyleSheet.create({
     wholeLine: { 
         flexDirection: 'row',
         alignItems: 'center',
+        gap: 100,
+        marginVertical: 15
+    },
+    tiktokWholeLine: { 
+        flexDirection: 'row',
+        alignItems: 'center',
         gap: 130,
         marginVertical: 15
     },
     arrowLine: {
         backgroundColor: '#1077AF', 
         borderRadius: 30, 
-        padding: 15
+        padding: 15,
     },
     social: {
         // backgroundColor: '#E4E6E8',

@@ -6,9 +6,10 @@ const Separator = () => <View style={styles.line} />;
 const styles = StyleSheet.create({
   line: {
     height: 1,
-    width: '100%',
-    backgroundColor: '#CED0CE',
+    width: '90%',
+    backgroundColor: '#E4E6E8',
     marginVertical: 10,
+    marginHorizontal: 'auto'
   },
 });
 

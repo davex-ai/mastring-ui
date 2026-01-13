@@ -92,7 +92,7 @@ const icons = {
         strokeWidth: "1.5",
         strokeLinecap: "round",
         strokeLinejoin: "round",
-        fill: "none" // important!
+        fill: "none" 
       }
     ]
   }
@@ -111,7 +111,6 @@ const Icon = ({ name, size = 24, color, style }) => {
     return <View style={[{ width: size, height: size }, style]} />;
   }
 
-  // Override fill color if provided
   const paths = icon.paths.map((path, index) => (
     <Path 
       key={index} 
