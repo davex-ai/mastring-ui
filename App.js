@@ -9,7 +9,7 @@ import Payment from './src/screens/Payment';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Payment /> 
+      <PageThree /> 
       <StatusBar style="auto" />
     </View>
   );

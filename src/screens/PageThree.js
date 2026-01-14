@@ -42,23 +42,24 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    textAlign: 'center',
-    marginVertical: 10,
+    textAlign: 'left',
+    marginTop: 50,
   },
   subtitle: {
     fontSize: 16,
-    textAlign: 'center',
-    marginBottom: 20,
+    textAlign: 'left',
+    marginVertical: 20,
     color: '#666',
   },
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
+    marginTop: 12,
     justifyContent: 'space-between',
   },
   image: {
-    width: '48%', // ~2 columns with gap
-    aspectRatio: 1, // square images (adjust if needed)
+    width: '48%', 
+    aspectRatio: 1, 
     marginBottom: 12,
     borderRadius: 12,
   },
