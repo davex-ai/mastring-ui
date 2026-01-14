@@ -7,11 +7,12 @@ import PageThree from './src/screens/PageThree';
 import Payment from './src/screens/Payment';
 import SecondIntroScreen from './src/screens/Second IntroScreen';
 import GetStarted from './src/screens/GetStarted';
+import Shop from './src/screens/Shop';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <SecondIntroScreen /> 
+      <Shop /> 
       <StatusBar style="auto" />
     </View>
   );
