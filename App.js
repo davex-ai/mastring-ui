@@ -11,7 +11,7 @@ import GetStarted from './src/screens/GetStarted';
 export default function App() {
   return (
     <View style={styles.container}>
-      <PageTwo /> 
+      <SecondIntroScreen /> 
       <StatusBar style="auto" />
     </View>
   );

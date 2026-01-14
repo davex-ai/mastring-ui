@@ -1,19 +1,17 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, Dimensions } from 'react-native'
 import React from 'react'
 
-const { width, height } = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
 const GetStarted = () => {
   return (
     <View style={styles.mainContainer}>
-      {/* Background Image */}
       <Image 
         style={styles.bg} 
         source={require('../assets/unsplash_fouVDmGXoPI.png')} 
         resizeMode="cover" 
       />
 
-      {/* Content Layer */}
       <View style={styles.overlay}>
         <Text style={styles.title}>You want Authentic, here you go!</Text>
         <Text style={styles.subtitle}>Find it here, buy it now!</Text>
@@ -31,22 +29,23 @@ export default GetStarted
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: '#000', // Fallback color
+    backgroundColor: '#000', 
   },
   bg: {
-    ...StyleSheet.absoluteFillObject, // Makes image cover the entire background
+    ...StyleSheet.absoluteFillObject, 
     width: width,
-    height: height,
+    height: '100%',
   },
   overlay: {
     flex: 1,
-    justifyContent: 'center', // Centers content vertically
-    alignItems: 'center',     // Centers content horizontally
+    justifyContent: 'flex-end', 
+    paddingBottom: 50,
+    alignItems: 'center',     
     paddingHorizontal: 20,
-    backgroundColor: 'rgba(0,0,0,0.3)', // Optional: darkens image to make text pop
+    backgroundColor: 'rgba(0,0,0,0.3)', 
   },
   title: {
-    fontSize: 45, // Slightly reduced for better mobile fit
+    fontSize: 45, 
     color: '#fff',
     textAlign: 'center',
     fontWeight: 'bold',
@@ -66,6 +65,6 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     width: 300,
     borderRadius: 10,
-    overflow: 'hidden', // Ensures borderRadius works on iOS
+    overflow: 'hidden', 
   }
 })
