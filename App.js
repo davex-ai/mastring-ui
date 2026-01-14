@@ -5,11 +5,13 @@ import SvgLogo from './src/components/SvgLogo';
 import PageTwo from './src/screens/PageTwo';
 import PageThree from './src/screens/PageThree';
 import Payment from './src/screens/Payment';
+import SecondIntroScreen from './src/screens/Second IntroScreen';
+import GetStarted from './src/screens/GetStarted';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <PageThree /> 
+      <GetStarted /> 
       <StatusBar style="auto" />
     </View>
   );
