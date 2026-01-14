@@ -4,11 +4,9 @@ import SvgLogo from '../components/SvgLogo'
 
 const SecondIntroScreen = () => {
   return (
-    <View style={styles.container}>
-        <SvgLogo/>
-        <Image source={require("../assets/Ellipse 1006 2.png")}
-        style={styles.sumImage}
-      />
+    <View style={styles.container}> 
+      <Text style={styles.text}>Stylish</Text>
+        <Image source={require("../assets/Group 34010.png")} style={styles.sumImage} />
     </View>
   )
 }
@@ -16,20 +14,19 @@ const SecondIntroScreen = () => {
 export default SecondIntroScreen
 
 const styles = StyleSheet.create({
-  container:{
-    backgroundColor: "#fff",
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+  container:{ 
+    flexDirection: 'row-reverse', 
+    alignItems: "center",
+    gap: 10
   },
-  sumImage: {
-  position: "absolute",
-  bottom: -69,
-  left: 110,
-  width: 150,
+  text: { 
+    fontSize: 40,
+    fontWeight: 500,
+    color: '#F83758'
+   },
+  sumImage: {  
+  width: 100,
   height: 300,
   resizeMode: "contain", 
-
-  
 }
 })
