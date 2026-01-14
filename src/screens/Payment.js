@@ -14,8 +14,13 @@ const Payment = () => {
       </View>
       <View style={styles.cardFlex}>
         <View style={styles.cardHold}><Icon name={"hand"} /></View>
-        <View style={styles.cardHold}><Icon name={"hand"} /></View>
+        <View style={{objectFit: 'cover', padding: 20, paddingHorizontal: 35, paddingTop: 26,  borderRadius: 10, backgroundColor: '#F0F5FA'}}><Icon name={"visa"} /></View>
         <MasterCard />
+      </View>
+      <View style={styles.cardNameFlex}>
+        <Text>Cash</Text>
+        <Text >Visa</Text>
+        <Text>MasterCard</Text>
       </View>
       <View style={styles.middle}>
         <Image style={{marginLeft: 30}}source={require('../assets/Group 48095676.png')} />
@@ -26,7 +31,9 @@ const Payment = () => {
       <Text style={styles.text}>+ ADD NEW</Text>
     </TouchableOpacity>
       <View style={styles.priceBox}><Text style={styles.total}>TOTAL: </Text> <Text style={styles.price}>$96</Text></View>
-      <View></View>
+      <TouchableOpacity >
+      <Text style={styles.orangeBtn}>PAY & CONFIRM</Text>
+    </TouchableOpacity>
     </View>
   )
 }
@@ -51,7 +58,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 20,
     marginHorizontal: 'auto',
-    marginBottom: 12
+    marginBottom: 12,
+  },
+  cardNameFlex: {
+    flexDirection: 'row',
+    gap: 80,
+    marginHorizontal: 'auto',
+    marginBottom: 12,
+    
   },
   middle: {
     backgroundColor: '#F7F8F9',
@@ -85,6 +99,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,        
     textAlign: 'center',
   },
+  
   text: {
     color: '#FF7A3D',           
     fontSize: 16,
@@ -96,5 +111,22 @@ const styles = StyleSheet.create({
   },
   price: {
     fontSize: 30
-  }
+  },
+  priceBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginTop: 30
+  },
+   orangeBtn: {
+    marginTop: 40,  
+    backgroundColor: '#FF7A3D', 
+    color: '#fff',
+    fontWeight: 700,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',     
+    borderRadius: 8,            
+    paddingVertical: 19,        
+    textAlign: 'center',
+  },
 }) 
