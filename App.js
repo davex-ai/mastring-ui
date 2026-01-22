@@ -12,7 +12,13 @@ import Shop from './src/screens/Shop';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Shop /> 
+      {/* <Shop />  */}
+      {/* <IntroScreen/> */}
+      {/* <PageThree/> */}
+      {/* <PageTwo/> */}
+      {/* <Payment/> */}
+      {/* <SecondIntroScreen/> */}
+      <GetStarted/>
       <StatusBar style="auto" />
     </View>
   );
