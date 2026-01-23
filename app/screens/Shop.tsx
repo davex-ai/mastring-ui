@@ -1,9 +1,9 @@
 import { Button, Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import watch1 from '../assets/Mi-Smart-Band-4-832x558-1573195785-removebg-preview 1 (1).png'
-import watch2 from '../assets/6_44mm-blu_889c7c8b-e883-41ab-856c-38c9dd970d12_1200x-removebg-preview 2.png'
-import watch3 from '../assets/0x0-removebg-preview 1.png'
-import watch4 from '../assets/Mi-Smart-Band-4-832x558-1573195785-removebg-preview 1.png'
+import watch1 from '../../assets/Mi-Smart-Band-4-832x558-1573195785-removebg-preview 1 (1).png'
+import watch2 from '../../assets/6_44mm-blu_889c7c8b-e883-41ab-856c-38c9dd970d12_1200x-removebg-preview 2.png'
+import watch3 from '../../assets/0x0-removebg-preview 1.png'
+import watch4 from '../../assets/Mi-Smart-Band-4-832x558-1573195785-removebg-preview 1.png'
 
 const Shop = () => {
     const watches = {

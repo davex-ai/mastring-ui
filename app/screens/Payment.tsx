@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
-import Arrow from '../components/Arrow'
-import Icon from '../components/Icon'
-import MasterCard from '../components/MasterCard.js'
-import Card from '../components/MasterCard.js'
+import Arrow from '../../components/Arrow'
+import Icon from '../../components/Icon'
+import MasterCard from '../../components/MasterCard.js'
+import Card from '../../components/MasterCard.js'
 
 const Payment = () => {
   return (

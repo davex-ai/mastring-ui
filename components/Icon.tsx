@@ -1,11 +1,10 @@
-// Icon.tsx
 import React from 'react';
 import { View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import { ViewStyle } from 'react-native';
 
 type IconProps = {
-  name: keyof typeof icons; // 🔥 only valid icon names allowed
+  name: keyof typeof icons; 
   size?: number;
   color?: string;
   style?: ViewStyle;
@@ -168,14 +167,21 @@ const icons: IconMap = {
 
 
 
-const Icon = ({ name, size = 24, color, style }) => {//error here  says binding element has any type    
-  const icon = icons[name]; 
-  
+export const Icon = ({
+  name,
+  size = 24,
+  color,
+  style,
+}: IconProps) => {
+  const icon = icons[name];
+
   if (!icon) {
-    console.warn(`Icon "${name}" not found. Available icons: ${Object.keys(icons).join(', ')}`);
-    return <View style={[{ width: size, height: size }, style]} />;
+    console.warn(`Icon "${name}" does not exist.`);
+    return null;
   }
 
+  const { width, height, viewBox} = icon;
+  
   const paths = icon.paths.map((path, index) => (
     <Path 
       key={index} 
