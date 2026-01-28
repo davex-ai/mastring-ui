@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import Arrow from '../../components/Arrow'
 import Icon from '../../components/Icon'
 import MasterCard from '@/components/MasterCard'
@@ -13,7 +13,7 @@ const Payment = () => {
       </View>
       <View style={styles.cardFlex}>
         <View style={styles.cardHold}><Icon name={"hand"} /></View>
-        <View style={{objectFit: 'cover', padding: 20, paddingHorizontal: 35, paddingTop: 26,  borderRadius: 10, backgroundColor: '#F0F5FA'}}><Icon name={"visa"} /></View>
+        <View style={{padding: 20, paddingHorizontal: 35, paddingTop: 26,  borderRadius: 10, backgroundColor: '#F0F5FA'}}><Icon name={"visa"} /></View>
         <MasterCard />
       </View>
       <View style={styles.cardNameFlex}>

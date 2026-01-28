@@ -1,6 +1,5 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import SvgLogo from '../../components/SvgLogo'
+import { Image, StyleSheet, Text, View } from 'react-native'
 
 const SecondIntroScreen = () => {
   return (
