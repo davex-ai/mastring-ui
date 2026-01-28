@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   sumImage: {
   position: "absolute",
   bottom: -69,
-  left: 110,
+  right: 0,
   width: 150,
   height: 300,
   resizeMode: "contain", // Ensures the image maintains its aspect ratio

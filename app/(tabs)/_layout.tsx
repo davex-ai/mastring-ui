@@ -18,14 +18,22 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <Ionicons size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color, size }) => <Ionicons size={28} name="home-outline" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="Second IntroScreen"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <Ionicons size={28} name="paperplane.fill" color={color} />,
+          title: 'Intro',
+          tabBarIcon: ({ color, size }) => <Ionicons size={28} name="heart" color={color} />,
+        }}
+      />
+      
+      <Tabs.Screen
+        name="Shop"
+        options={{
+          title: 'Shop',
+          tabBarIcon: ({ color, size }) => <Ionicons size={28} name="cart-outline" color={color} />,
         }}
       />
     </Tabs>
