@@ -2,8 +2,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Arrow from '../../components/Arrow'
 import Icon from '../../components/Icon'
-import MasterCard from '../../components/MasterCard.js'
-import Card from '../../components/MasterCard.js'
+import MasterCard from '@/components/MasterCard'
 
 const Payment = () => {
   return (
@@ -23,7 +22,7 @@ const Payment = () => {
         <Text>MasterCard</Text>
       </View>
       <View style={styles.middle}>
-        <Image style={{marginLeft: 30}}source={require('../assets/Group 48095676.png')} />
+        <Image style={{marginLeft: 30}}source={require('../../assets/Group 48095676.png')} />
         <Text style={styles.thick}>No master card added</Text>
         <Text style={styles.normal}>You can add a mastercard and save it later</Text>
       </View>

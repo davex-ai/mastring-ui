@@ -6,7 +6,7 @@ const IntroScreen = () => {
   return (
     <View style={styles.container}>
         <SvgLogo/>
-        <Image source={require("../assets/Ellipse 1006 2.png")}
+        <Image source={require("../../assets/Ellipse 1006 2.png")}
         style={styles.sumImage}
       />
     </View>

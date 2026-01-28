@@ -9,7 +9,7 @@ const PageTwo = () => {
         <View>
             <View style={styles.top_container}>
                 <Arrow />
-                <Image style={styles.image} source={require("../assets/Img.png")} />
+                <Image style={styles.image} source={require("../../assets/Img.png")} />
             </View>
             <Text style={styles.text}> Contact Us</Text>
             <View style={styles.body}>

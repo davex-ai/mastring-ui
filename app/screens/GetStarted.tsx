@@ -8,7 +8,7 @@ const GetStarted = () => {
     <View style={styles.mainContainer}>
       <Image 
         style={styles.bg} 
-        source={require('../assets/unsplash_fouVDmGXoPI.png')} 
+        source={require('../../assets/unsplash_fouVDmGXoPI.png')} 
         resizeMode="cover" 
       />
 
