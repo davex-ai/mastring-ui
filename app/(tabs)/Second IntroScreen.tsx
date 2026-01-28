@@ -6,7 +6,7 @@ const SecondIntroScreen = () => {
   return (
     <View style={styles.container}> 
       <Text style={styles.text}>Stylish</Text>
-        <Image source={require("../../assets/")} style={styles.sumImage} />
+        <Image source={require("../../assets/Group 34010.png")} style={styles.sumImage} />
     </View>
   )
 }
