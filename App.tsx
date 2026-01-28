@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import IntroScreen from './app/screens/IntroScreen';
 import SvgLogo from '././components/SvgLogo';
-import PageTwo from './app/screens/PageTwo';
+import PageTwo from './app/(tabs)/PageTwo';
 import PageThree from './app/screens/PageThree';
 import Payment from './app/screens/Payment';
 import SecondIntroScreen from './app/(tabs)/Second IntroScreen';

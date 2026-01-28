@@ -36,6 +36,14 @@ export default function TabLayout() {
           tabBarIcon: ({ color, size }) => <Ionicons size={28} name="cart-outline" color={color} />,
         }}
       />
+      
+      <Tabs.Screen
+        name="PageTwo"
+        options={{
+          title: 'Socials',
+          tabBarIcon: ({ color, size }) => <Ionicons size={28} name="person-circle" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }

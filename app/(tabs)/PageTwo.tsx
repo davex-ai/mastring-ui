@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#1077AF', 
         borderRadius: 30, 
         padding: 15,
+        marginLeft: 50
     },
     social: {
         // backgroundColor: '#E4E6E8',
