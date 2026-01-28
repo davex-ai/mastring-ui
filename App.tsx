@@ -5,9 +5,9 @@ import SvgLogo from '././components/SvgLogo';
 import PageTwo from './app/screens/PageTwo';
 import PageThree from './app/screens/PageThree';
 import Payment from './app/screens/Payment';
-import SecondIntroScreen from './app/screens/Second IntroScreen';
+import SecondIntroScreen from './app/(tabs)/Second IntroScreen';
 import GetStarted from './app/screens/GetStarted';
-import Shop from './app/screens/Shop';
+import Shop from './app/(tabs)/Shop';
 
 export default function App() {
   return (
