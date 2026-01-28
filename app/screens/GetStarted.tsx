@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity, Dimensions } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 const { width } = Dimensions.get('window');
 
@@ -8,7 +8,7 @@ const GetStarted = () => {
     <View style={styles.mainContainer}>
       <Image 
         style={styles.bg} 
-        source={require('../assets/unsplash_fouVDmGXoPI.png')} 
+        source={require('../../assets/images/unsplash_fouVDmGXoPI.png')}
         resizeMode="cover" 
       />
 

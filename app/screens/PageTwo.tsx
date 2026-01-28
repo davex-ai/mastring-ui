@@ -1,7 +1,7 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import Arrow from '../../components/Arrow'
-import Icon from '../../components/Icon'
+import { Icon } from '../../components/Icon'
 import Separator from '../../components/Seperator'
 
 const PageTwo = () => {

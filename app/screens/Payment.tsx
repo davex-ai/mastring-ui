@@ -1,9 +1,8 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import Arrow from '../../components/Arrow'
-import Icon from '../../components/Icon'
-import MasterCard from '../../components/MasterCard.js'
-import Card from '../../components/MasterCard.js'
+import { Icon } from '../../components/Icon'
+import MasterCard from '../../components/MasterCard'
 
 const Payment = () => {
   return (
@@ -14,7 +13,7 @@ const Payment = () => {
       </View>
       <View style={styles.cardFlex}>
         <View style={styles.cardHold}><Icon name={"hand"} /></View>
-        <View style={{objectFit: 'cover', padding: 20, paddingHorizontal: 35, paddingTop: 26,  borderRadius: 10, backgroundColor: '#F0F5FA'}}><Icon name={"visa"} /></View>
+        <View style={{padding: 20, paddingHorizontal: 35, paddingTop: 26,  borderRadius: 10, backgroundColor: '#F0F5FA'}}><Icon name={"visa"} /></View>
         <MasterCard />
       </View>
       <View style={styles.cardNameFlex}>
@@ -23,7 +22,7 @@ const Payment = () => {
         <Text>MasterCard</Text>
       </View>
       <View style={styles.middle}>
-        <Image style={{marginLeft: 30}}source={require('../assets/Group 48095676.png')} />
+        <Image style={{marginLeft: 30}} source={require('../assets/images/Group 48095676.png')} />
         <Text style={styles.thick}>No master card added</Text>
         <Text style={styles.normal}>You can add a mastercard and save it later</Text>
       </View>

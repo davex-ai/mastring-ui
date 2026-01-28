@@ -1,12 +1,12 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { Image, StyleSheet, View } from 'react-native';
 import SvgLogo from '../../components/SvgLogo';
 
 const IntroScreen = () => {
   return (
     <View style={styles.container}>
         <SvgLogo/>
-        <Image source={require("../assets/Ellipse 1006 2.png")}
+        <Image source={require("../../assets/images/ellipse_1006_2.png")}
         style={styles.sumImage}
       />
     </View>
